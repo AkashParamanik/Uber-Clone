@@ -1,6 +1,112 @@
 ﻿# Uber-Clone
-# Uber Clone Backend API Documentation
+ # 🚗 Uber Clone - Frontend
 
+This is the frontend portion of an Uber-like ride-hailing application, built with **ReactJS**. It includes separate flows for **Users** and **Captains (Drivers)**, live tracking, authentication, ride management, and UI transitions.
+
+---
+
+## 🔗 Features
+
+- User and Captain Authentication (Signup/Login)
+- Ride booking and confirmation
+- Live location tracking (using Socket.io and Geolocation API)
+- Ride completion flow
+- Modern, mobile-first UI design
+
+---
+
+## 🧭 Pages & Screens
+
+### 1. `Start.jsx` – Landing Page
+
+The entry point with a splash-style background and a **"Continue"** button.
+
+### 2. `UserSignup.jsx` – User Registration
+
+Form to create a new user with first name, last name, email, and password.
+
+
+
+### 3. `UserLogin.jsx` – User Login
+
+Form for existing users to log in. Also provides a button to switch to Captain login.
+
+#### 📸 Screenshot
+![](https://blogger.googleusercontent.com/img/a/AVvXsEgvugo4LsYcs6nRCzb6_MZutAc2QhEXtW7BMyKakopAmJXzRkwZQxHaMl26OPh1fgJ7CGlrs8zVsxTmI0pdxknjX7WI-sPojGooYCyfC19OK5ZAxAGiDKOrG5R64OaXoNfoi6U_OzXUDdSyh2HnHkZ2CKDNYvSkNVM5HVHaeBT7_2yZC9qcJGzqMxzGwH0)
+
+---
+
+### 4. `Home.jsx` – User Home Page
+
+Main user dashboard to view available rides or status (not shown in uploaded files, assumed from routing).
+
+#### 📸 Screenshot
+![](https://blogger.googleusercontent.com/img/a/AVvXsEjGtLWIcK78IrU-931bOzxp9CkJSq66XASDRlNY0fxg-SEQV2Ovc8YK_Z7kXOgo4fnu962c5FLPOj4UC0HC9UyZeWgdq8GI1_MZiN8NONWFIuHs2oHAg5EXcPjceLizlwwEbfRCGPtW76HsqfAHuvK6YeesXI7HOzs0b6UU_iLgMVc7CHnrfceLt2vjPoo)
+
+---
+
+### 5. `Riding.jsx` – Ongoing Ride for User
+
+Displays real-time captain tracking, vehicle info, destination, and fare. Includes a “Make Payment” button.
+
+#### 📸 Screenshot
+![](https://blogger.googleusercontent.com/img/a/AVvXsEgn1dbekSpI8qa0TQWrz2ee5Jx9LtWQfcE0e-FNleUQ7nD_mnXtz12wzqHvars7JJ2I7-4aXAZFb6oSXMdfNZEsu0uhknSL5Gfla58MLBNJoP2rEBvpr1Jog9_LcvWvih1cTFUvAbyQ0h4hfkmGj02VRPxVf3pRtnkL__XKOlbQdoMVRIa1qG5lS4qdJZY)
+
+---
+
+### 6. `CaptainSignup.jsx` – Captain Registration
+
+Captains register with full name, email, password, and detailed vehicle info.
+
+
+---
+
+### 7. `Captainlogin.jsx` – Captain Login
+
+Login form for Captains. Also provides a button to switch to User login.
+
+#### 📸 Screenshot
+![](https://blogger.googleusercontent.com/img/a/AVvXsEiTa247uX4ARPCKf-ndZN6rmgzV0-EE2FmwEGKvv_QOuwG4Ctuwy3vMNrDmpaXEMW04uUdcSZLMjd5h3ObuQi47_oRPPcFFCpJnD4X6DaeoY-8gNJtulM-C4fnyp4svhGZrmmf4hwUy5M4jthW54aqV0zZKukNq29M2l9Cx5S91cfzCpgTBeR2lud_-mfc)
+
+---
+
+### 8. `CapatainHome.jsx` – Captain Dashboard
+
+Captain's main interface showing map tracking, ride request popups, and ride confirmation.
+
+---
+
+### 9. `CaptainRiding.jsx` – Ongoing Ride for Captain
+
+Captain’s real-time ride screen with live tracking and finish-ride workflow.
+
+#### 📸 Screenshot
+![](https://blogger.googleusercontent.com/img/a/AVvXsEilFo6fh8mI5-NaMUtmelYBeojOq9v5q2jAwgFrLNatvis1nL6xYLJwodGflg-5qnqCDHqlO83S71dKYGwx_oA5JZoRWYE4KGHRwSpGKJw9meT1U9qOxCTBrtsr38hT8sznT-MRShfNNwS5O_kMtywdZLbFtbWS2buqZWkKWi4A_OtEga3HtGrXZKzwEQw)
+
+---
+
+## 🛠️ Tech Stack
+
+- **ReactJS**
+- **React Router DOM**
+- **GSAP** for animations
+- **Socket.io** for real-time communication
+- **Axios** for HTTP requests
+- **TailwindCSS / Utility-first styling**
+
+---
+
+## 📦 Setup Instructions
+
+```bash
+git clone https://github.com/your-username/uber-clone-frontend.git
+cd uber-clone-frontend
+npm install
+npm start
+```
+
+
+# Uber Clone Backend API Documentation
 ## Overview
 
 This document provides details about the API endpoints for user registration and login in the Uber Clone backend.
